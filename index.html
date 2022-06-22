@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiniAssembler</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+</head>
+<body class="vc">
+
+  <div id="snackbar">Code Completed!</div>
+
+  <div class="hs" style="gap: 16px">
+    <div class="vs" style="gap: 16px; height: 90vh;">
+      <div class="panel code-container">
+        <textarea id='lineCounter' wrap='off' readonly>1</textarea>
+        <textarea id='codeEditor' wrap='off' spellcheck="false"></textarea>
+      </div>
+
+      <button id="run-button" class="run-button">
+        Run Code ->
+      </button>
+    </div>
+
+    <div class="panel vs table-panel">
+      <table>
+        <thead>
+          <tr id="table-header" class="red"></tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
